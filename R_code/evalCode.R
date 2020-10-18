@@ -117,6 +117,10 @@ statsCarpentras <- radStats(estimCarpentras, carpentras)
 ## Example for Cabauw station
 
 ## Define the graphical parameters
+install.packages("RColorBrewer")
+library(RColorBrewer)
+library(tdr)
+
 myTheme <- tdTheme(pch = c(21:25),
                    col.points = 'black',
                    fill = brewer.pal(n= 12, 'Paired'),
